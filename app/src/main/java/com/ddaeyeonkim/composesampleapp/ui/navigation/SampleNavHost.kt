@@ -6,6 +6,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.ddaeyeonkim.composesampleapp.ui.screen.Home
+import com.ddaeyeonkim.composesampleapp.ui.screen.ResourcesScreen
 
 @Composable
 fun SampleNavHost(
@@ -22,5 +23,8 @@ fun SampleNavHost(
 fun NavGraphBuilder.sampleNavigation() {
     composable(route = Screens.Home.name) {
         Home()
+    }
+    composable(route = Screens.Resources.name) {
+        ResourcesScreen()
     }
 }
