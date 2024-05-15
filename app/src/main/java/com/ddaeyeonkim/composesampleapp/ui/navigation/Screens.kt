@@ -9,7 +9,7 @@ sealed class Screens(
     val name: String = route.appendArguments(navArguments)
 
     data object Home: Screens("home")
-
+    data object Lists: Screens("lists")
     data object Resources: Screens("resources")
 }
 

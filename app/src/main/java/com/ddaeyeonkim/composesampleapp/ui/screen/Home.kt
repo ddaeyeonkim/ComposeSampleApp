@@ -28,6 +28,11 @@ fun Home() {
     ) { innerPadding ->
         LazyColumn(modifier = Modifier.padding(innerPadding)) {
             item {
+                HomeButton(label = "List") {
+                    navigator.navigate(Screens.Lists.name)
+                }
+            }
+            item {
                 HomeButton(label = "Resources") {
                     navigator.navigate(Screens.Resources.name)
                 }
